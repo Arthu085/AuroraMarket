@@ -10,12 +10,28 @@
 	margin-bottom: 47px;
 }
 
+.links-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
 .link-pages {
 	display: flex;
 	justify-content: flex-start;
 	gap: 47px;
-	margin-left: 20px;
 	padding-bottom: 20px;
+}
+
+.login-carrinho {
+	display: flex;
+	gap: 20px;
+}
+
+.login-carrinho img {
+	width: 55px;
+	height: auto;
 }
 
 .home-link {
