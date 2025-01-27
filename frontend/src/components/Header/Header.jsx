@@ -18,7 +18,6 @@ const Header = () => {
                         <Link to='' className='page-link'>Correntes</Link>
                         <Link to='' className='page-link'>Pingentes</Link>
                         <Link to='' className='page-link'>Pulseiras</Link>
-                        <Link to='' className='page-link'>Ver Tudo</Link>
                     </div>
                     <div className='login-carrinho'>
                         <Link to='' className='page-link'>Entre ou <br/>cadastre-se</Link>
