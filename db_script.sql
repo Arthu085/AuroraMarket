@@ -16,7 +16,6 @@ CREATE TABLE produto (
     nome VARCHAR(100) NOT NULL,
     descricao VARCHAR(300) NOT NULL,
     preco NUMERIC(6,2) NOT NULL,
-    material VARCHAR(15),
     imagem_url TEXT,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     id_categoria INT NOT NULL REFERENCES categoria(id_categoria),
@@ -37,3 +36,22 @@ CREATE TABLE material (
 -- Alteração da tabela 'produto' para incluir a coluna 'id_material' como chave estrangeira
 ALTER TABLE produto
 ADD COLUMN id_material INT NOT NULL REFERENCES material(id_material);
+
+-- População da tabela 'categoria'
+INSERT INTO categoria (nome_categoria) VALUES
+('aneis'),
+('aliancas'),
+('brincos'),
+('colares'),
+('correntes'),
+('pingentes'),
+('pulseiras');
+
+-- População da tabela 'material'
+INSERT INTO material (nome_material) VALUES
+('ouro'),
+('prata'),
+('platina'),
+('aço inoxidável'),
+('titânio'),
+('couro');
