@@ -55,3 +55,6 @@ INSERT INTO material (nome_material) VALUES
 ('aço inoxidável'),
 ('titânio'),
 ('couro');
+
+
+SELECT * FROM produto p 
